@@ -71,6 +71,24 @@
         "default": 1,
         "hint": "0=完全保密, 1=基础显示, 2=详细显示（全员生效）"
     },
+    "enable_smart_update": {
+        "description": "启用智能更新机制",
+        "type": "bool",
+        "default": true,
+        "hint": "开启后根据对话内容智能判断是否需要情感更新"
+    },
+    "force_update_interval": {
+        "description": "强制更新间隔（对话次数）", 
+        "type": "int",
+        "default": 5,
+        "hint": "设置多少次对话后强制更新情感状态"
+    },
+    "emotional_significance_threshold": {
+        "description": "情感意义阈值",
+        "type": "int", 
+        "default": 5,
+        "hint": "达到此阈值的情感变化会存入长期记忆"
+    },
     "enable_secondary_llm": {
         "description": "启用辅助LLM进行情感分析",
         "type": "bool",
@@ -88,11 +106,5 @@
         "type": "string",
         "default": "",
         "hint": "用于情感分析的LLM模型名称"
-    },
-    "force_text_update": {
-        "description": "强制每次对话更新文本描述",
-        "type": "bool", 
-        "default": true,
-        "hint": "开启后每次对话都会强制更新态度和关系描述"
     }
 }
