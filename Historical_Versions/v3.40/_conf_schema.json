@@ -1,0 +1,110 @@
+{
+    "session_based": {
+        "description": "是否启用会话独立的情感系统",
+        "type": "bool",
+        "default": false,
+        "hint": "开启后，每个群聊/私聊的情感状态将独立计算"
+    },
+    "favour_min": {
+        "description": "好感度最小值",
+        "type": "int",
+        "default": -100,
+        "hint": "设置好感度的最低值"
+    },
+    "favour_max": {
+        "description": "好感度最大值",
+        "type": "int",
+        "default": 100,
+        "hint": "设置好感度的最高值"
+    },
+    "intimacy_min": {
+        "description": "亲密度最小值",
+        "type": "int",
+        "default": 0,
+        "hint": "设置亲密度的最低值"
+    },
+    "intimacy_max": {
+        "description": "亲密度最大值",
+        "type": "int",
+        "default": 100,
+        "hint": "设置亲密度的最高值"
+    },
+    "change_min": {
+        "description": "好感度单次变化最小值",
+        "type": "int",
+        "default": -10,
+        "hint": "设置好感度单次减少的最大值"
+    },
+    "change_max": {
+        "description": "好感度单次变化最大值",
+        "type": "int",
+        "default": 5,
+        "hint": "设置好感度单次增加的最大值"
+    },
+    "admin_qq_list": {
+        "description": "管理员QQ号列表",
+        "type": "list",
+        "default": [],
+        "hint": "在此列表中的QQ号可以使用管理员命令"
+    },
+    "plugin_priority": {
+        "description": "插件处理优先级",
+        "type": "int",
+        "default": 100000,
+        "hint": "设置插件处理消息的优先级（数字越大越先执行）"
+    },
+    "enable_attitude_system": {
+        "description": "启用 FavourPro 态度关系系统",
+        "type": "bool",
+        "default": true,
+        "hint": "开启后启用态度和关系的深度模拟"
+    },
+    "enable_ai_text_generation": {
+        "description": "启用 AI 自主生成文本描述",
+        "type": "bool", 
+        "default": true,
+        "hint": "开启后AI可以自主生成态度和关系描述文本"
+    },
+    "global_privacy_level": {
+        "description": "全局隐私级别",
+        "type": "int",
+        "default": 1,
+        "hint": "0=完全保密, 1=基础显示, 2=详细显示（全员生效）"
+    },
+    "enable_smart_update": {
+        "description": "启用智能更新机制",
+        "type": "bool",
+        "default": true,
+        "hint": "开启后根据对话内容智能判断是否需要情感更新"
+    },
+    "force_update_interval": {
+        "description": "强制更新间隔（对话次数）", 
+        "type": "int",
+        "default": 5,
+        "hint": "设置多少次对话后强制更新情感状态"
+    },
+    "emotional_significance_threshold": {
+        "description": "情感意义阈值",
+        "type": "int", 
+        "default": 5,
+        "hint": "达到此阈值的情感变化会存入长期记忆"
+    },
+    "enable_secondary_llm": {
+        "description": "启用辅助LLM进行情感分析",
+        "type": "bool",
+        "default": true,
+        "hint": "开启后使用额外的LLM专门分析情感状态和更新关系态度"
+    },
+    "secondary_llm_provider": {
+        "description": "辅助LLM提供商",
+        "type": "string", 
+        "default": "",
+        "hint": "用于情感分析的LLM提供商名称，留空则使用主LLM"
+    },
+    "secondary_llm_model": {
+        "description": "辅助LLM模型",
+        "type": "string",
+        "default": "",
+        "hint": "用于情感分析的LLM模型名称"
+    }
+}
