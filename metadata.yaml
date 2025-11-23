@@ -1,4 +1,4 @@
-name: emotionaipro
+name: astrbot_plugin_emotionaipro
 desc: >-
   融合 EmotionAI 与 FavourPro 的新一代高级情感智能插件。
   新增「智能更新机制」「辅助 LLM 情感分析」「长期记忆系统」「负好感支持」「关系阶段过渡保护」，
