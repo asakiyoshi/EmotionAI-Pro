@@ -1,0 +1,6 @@
+# requirements.txt - 完整版本
+pydantic>=2.0.0
+aiofiles>=23.0.0
+psutil>=5.9.0
+watchfiles>=0.20.0
+xxhash>=3.4.1
